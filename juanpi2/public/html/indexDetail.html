@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/indexDetail.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	 <style>
+        .bl_img{
+            max-width:100%;
+            max-height:280px;
+            margin:0px auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<div class='close'><button>X</button></div>
+		<div class='h_show'><img src="img/header_logo1.png"></div>
+		<ul>
+			<li>品质特卖1折起</li>
+			<li>精选折扣尽在卷皮APP</li>
+		</ul>
+		<div class='download'>
+			<p>下载</p>
+		</div>
+	</header>
+	<nav>
+		<h1>卷皮 <a href="#/index_sec"><img src="img/btn.png"></a></h1>
+		<ul>
+			<li ng-click='cl1()'>上新</li>
+			<li ng-click='cl2()'>女装</li>
+			<li ng-click='cl1()'>鞋包</li>
+			<li ng-click='cl1()'>母婴</li>
+			<li ng-click='cl1()'>居家数码</li>
+		</ul>
+	</nav>
+	<div class="swiper-container">
+    	<div class="swiper-wrapper">
+       	 	<div class="swiper-slide" ng-repeat='img in arr.slider'>
+       	 		<img src={{img.pic}}>
+       	 	</div>
+    	</div>
+    	<div class="swiper-pagination"></div>
+	</div>
+	<div id="icons">
+		<dl>
+			<img src="img/icon1.png">
+			<p>最后疯抢</p>
+		</dl>
+		<dl>
+			<img src="img/icon2.png">
+			<p>9.9包邮</p>
+		</dl>
+		<dl>
+			<img src="img/icon3.png">
+			<p>拼团</p>
+		</dl>
+		<dl>
+			<img src="img/icon4.png">
+			<p>即将上线</p>
+		</dl>
+	</div>
+	<div id="star">
+		<div ng-repeat='img in arr.dpic'><img ng-src={{img.pic}}></div>
+	</div>
+	<div id='mid_tip' ng-repeat='img in arr.dnew'><img ng-src={{img.pic}}></div>
+	<!-- angular -->
+	<div id='indexDetailAngular' ng-controller='indexcon'>
+		<dl ng-repeat='obj in arr.list'>
+			<dt><img ng-src="{{obj.pic}}"></dt>
+			<dd>{{obj.title}}<span>{{obj.class}}</span></dd>
+			<p>{{obj.name}}</p>
+		</dl>
+	</div>
+	<br><br><br><br>
+</body>
+</html>

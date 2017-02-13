@@ -1,0 +1,118 @@
+nav{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+nav h1{
+	position: relative;
+	/*text-align: center;*/
+	height: 2.5rem;
+	line-height: 2.5rem; 
+	font-size: 1rem;
+	flex:87;
+	font-weight: 500;
+	text-indent: 4rem;
+}
+nav div{
+	flex: 13;
+	text-align: center;
+}
+nav div img{
+	width: 50%;
+	margin-top: 0.7rem;
+}
+
+#search{
+	width: 100%;
+	background:white;
+	padding: 0.5rem 0;
+
+}
+#search div{
+	width: 90%;
+	margin:0 auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+}
+#search div img{
+	border: none;
+	overflow: hidden;
+	height: 1.5rem;
+	flex: 9;
+}
+#search div input{
+	border: none;
+	overflow: hidden;
+	/*line-height: 1.5em;
+	height: 1.5em;*/
+	background:none;
+	font-size: 0.7rem;
+	flex: 91;
+}
+/*angular部分*/
+#index_secAngular{
+	width: 100%;
+	background:white;
+	overflow: hidden;
+}
+/*左侧边菜单栏*/
+.left_btn{
+	/*position: fixed;
+	bottom: 0;
+	left: 0;
+	background:pink;*/
+	/*position: fixed;
+	left: 0;
+	top: 5.13rem;*/
+	width: 25%;
+	float: left;
+}
+.left_btn ul{
+	width: 100%;
+}
+.left_btn ul li{
+	width: 100%;
+	height: 2.5rem;
+	background:rgb(249,249,249);
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	line-height: 2.5rem;
+	font-size: 0.7rem;
+	color:rgb(101,101,101);
+	box-sizing: border-box;
+}
+.left_btn ul li:hover{
+	background:white;
+	color:red;
+	border-left: 1px solid red;
+}
+/*右侧对应信息*/
+.right_msg{
+	float: right;
+	width: 	75%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:0 11%;
+}
+.right_msg dl{
+	width: 24%;
+	margin-right: 9%;
+	float: left;
+	margin-top: 3%;
+}
+.right_msg dl dt{
+	width: 100%;
+}
+.right_msg dl dt img{
+	width: 100%;
+}
+.right_msg dl dd{
+	font-size: 0.5rem;
+	width: 100%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

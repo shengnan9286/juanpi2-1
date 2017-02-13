@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width= device-width,user-scalable=no'>
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<script type="text/javascript" src='js/angular.js'></script>
+	<script type="text/javascript" src='js/angular-route.js'></script>
+	<script type="text/javascript" src='js/swiper.js'></script>
+</head>
+<body ng-app='myapp'>
+	<div ng-view></div>
+	<footer>
+		<ul>
+			<li>
+				<a href="#/">
+					<img src="img/logo1.png">
+					<p style='color:red;'>今日折扣</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/home">
+					<img src="img/logo2.png">
+					<p>居家馆</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/global">
+					<img src="img/logo3.png">
+					<p>全球购</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/shopcar">
+					<img src="img/logo4.png">
+					<p>购物车</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/mine">
+					<img src="img/logo5.png">
+					<p>我的卷皮</p>
+				</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+<script type="text/javascript">
+	// footer 点击变色
+	var ps = document.querySelectorAll('footer ul li a p');
+	for(let i = 0; i < ps.length; i++){
+		ps[i].index = i;
+		ps[i].onclick = function(){
+			for(let j = 0 ; j < ps.length; j++){
+				ps[j].style.color = 'black';
+			}
+			ps[this.index].style.color = 'red';
+		}
+	}
+</script>
+<script type="text/javascript" src='js/controller.js'></script>
+<script type="text/javascript" src='js/shouye.js'></script>
+<script type="text/javascript" src='js/homePage.js'></script>
+<script type="text/javascript" src='js/index_sec.js'></script>
+</html>
