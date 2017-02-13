@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+<body>
+	<nav>
+		<h1 style="color:black;font-weight: normal;">居家馆 <a href="#/index_sec"><img src="img/btn.png"></a></h1>
+		<ul>
+			<li ng-click='cl1()'>精选</li>
+			<li ng-click='cl2()'>百货</li>
+			<li ng-click='cl3()'>厨房</li>
+			<li ng-click='cl4()'>清洁</li>
+			<li style='flex:1;' ng-click='cl5()'>卫浴</li>
+		</ul>
+	</nav>
+	<div id="isShow">
+		<div class="swiper-container">
+	    	<div class="swiper-wrapper">
+	       	 	<div class="swiper-slide" ng-repeat='img in arrSlider'>
+	       	 		<img src={{img.pic}}>
+	       	 	</div>
+	    	</div>
+	    	<div class="swiper-pagination"></div>
+		</div>
+		<div id="star">
+			<div><img src="http://s1.juancdn.com/bao/160921/2/3/57e24468151ad163488b45d2_375x456.jpg"></div>
+			<div><img src="http://s1.juancdn.com/bao/160921/a/e/57e243a1151ad1404a8b45b1_375x228.jpg"></div>
+			<div><img src="http://s1.juancdn.com/bao/160921/9/8/57e243b7151ad1284a8b45bf_375x228.jpg"></div>
+		</div>
+		<div class="showpic">
+			<img src="http://s1.juancdn.com/bao/160922/3/a/57e33d8d151ad1ff198b456a_750x360.jpg">
+			<img src="http://s2.juancdn.com/bao/160630/b/9/5774ed15151ad1c67a8b4603_632x60.jpg">
+		</div>
+	</div>
+	<!-- angular -->
+	<div id='homeAngular' ng-controller='homecon'>
+		<dl ng-repeat='obj in arr'>
+			<dt><img ng-src="{{obj.pic_url}}"></dt>
+			<dd>￥{{obj.cprice}} <span>￥{{obj.oprice}}</span><span>{{obj.time_left}}</span></dd>
+			<p>{{obj.title}}</p>
+		</dl>
+	</div>
+	<p id='bot'>亲！已经到底了！！！</p>
+	<br><br><br><br>
+</body>
+</html>
