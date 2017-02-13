@@ -1,0 +1,65 @@
+body{
+	background: transparent;
+	/*透明色*/
+}
+.reg_wrap>p:nth-child(1){
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e7e7e7;
+}
+.reg_wrap>p>span img{
+	width: 30%;
+	float: left;
+	margin-top: 12%;
+	margin-left: 12%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.reg_wrap>p>span{
+	width: 30%;
+	text-align: center;
+	color: #262626;
+	font-size: 0.23rem;
+	line-height: 0.55rem;
+}
+.reg_wrap>p:nth-child(2){
+	color: rgb(160, 160, 160);
+	line-height: 0.5rem;
+	text-align:center;
+	font-size: 0.14rem;
+}
+.regist_part {
+	position: relative;
+	color: rgb(160, 160, 160);
+	font-size: 0.16rem;
+}
+.regist_part input{
+	width: 95%;
+	height: 0.4rem;
+	display: block;
+	font-size: 0.16rem;
+	border: none;
+	outline: none;
+	margin: 0.25rem auto;
+	border-bottom:1px solid #e7e7e7;
+}
+.regist_part>span{
+	position: absolute;
+	bottom: 0.12rem;
+	right: 0.1rem;
+}
+
+.reg_btn>a{
+	display: block;
+    width: 3.5rem;
+    margin: 0.4rem auto;
+    text-align: center;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: #dbdbdb;
+    color: #fff;
+    font-size: 0.18rem;
+}
+footer{
+	display: none;
+}

@@ -1,0 +1,1 @@
+angular.module("myapp").controller("mine",["$scope",function(n){n.close=!1,n.openFn=function(){n.close=!0},n.closeFn=function(){n.close=!1}}]);

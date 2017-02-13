@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全部分类</title>
+	<link rel="stylesheet" type="text/css" href="css/index_sec.css">
+</head>
+<body style='background:white;'>
+	<nav>
+		<div><a href="#/"><img src="img/left.png"></a></div>
+		<h1>全部分类</h1>
+	</nav>
+	<div id="search">
+		<div>
+			<img src="img/search.png">
+			<input type="text" name="" placeholder="搜索商品">
+		</div>
+	</div>
+	<div id="index_secAngular" ng-controller='index_seccon'>
+		<div class='left_btn' >
+			<ul>
+				<li ng-repeat='obj in arrName' ng-click='cl()'>{{obj}}</li>
+			</ul>
+		</div>
+		<div class="right_msg">
+			<dl ng-repeat='obj in arr'>
+				<dt><img ng-src="{{obj.pic_url}}"></dt>
+				<dd>{{obj.title}}</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var index_seccon=app.controller("index_seccon",["$scope","$http",function(n,o){function c(){o({url:"http://localhost:2046/find"+n.num,method:"get"}).success(function(o){console.log(o),n.arr=o.data.goods})}n.arrName=["百货","咖啡","好咖啡","女装","日用","服装","鞋靴","凉鞋","卡通","运动户外","美食"],n.num=1,c(),n.cl=function(){n.num=this.$index+1,c()}}]);
